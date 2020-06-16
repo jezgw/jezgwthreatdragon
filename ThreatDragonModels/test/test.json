@@ -1,0 +1,21 @@
+{
+  "summary": {
+    "title": "test",
+    "owner": "jw",
+    "description": "test"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "tester"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "test",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      }
+    ]
+  }
+}
