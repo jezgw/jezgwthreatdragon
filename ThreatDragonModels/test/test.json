@@ -305,9 +305,16 @@
               "angle": 0,
               "id": "8a47c179-4442-4324-b217-bc03821acb53",
               "z": 13,
+              "hasOpenThreats": false,
               "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
                 "text": {
                   "text": "actor 10"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -337,7 +344,15 @@
                 }
               ],
               "z": 14,
-              "attrs": {}
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
             },
             {
               "type": "tm.Flow",
@@ -369,7 +384,72 @@
                 }
               ],
               "z": 15,
-              "attrs": {}
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 288,
+                "y": 367
+              },
+              "angle": 0,
+              "id": "1b74289c-fb45-482e-8cae-6499eb256d34",
+              "z": 16,
+              "attrs": {
+                "text": {
+                  "text": "process 13"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 412,
+                "y": 1
+              },
+              "angle": 0,
+              "id": "eaf56f4a-1da9-4904-8a79-147e406e0726",
+              "z": 17,
+              "attrs": {
+                "text": {
+                  "text": "process 14"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 776,
+                "y": 281
+              },
+              "angle": 0,
+              "id": "56918725-1d51-4a93-ae07-f3e8511bb77e",
+              "z": 18,
+              "attrs": {
+                "text": {
+                  "text": "process 15"
+                }
+              }
             }
           ]
         },
