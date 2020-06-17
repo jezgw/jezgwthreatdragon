@@ -233,7 +233,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "store 7"
+                  "text": "Azure IoT"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -259,7 +259,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "store 9"
+                  "text": "AMS Portal"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
@@ -285,7 +285,7 @@
                   "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
-                  "text": "store 10"
+                  "text": "EMS Case Management"
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
