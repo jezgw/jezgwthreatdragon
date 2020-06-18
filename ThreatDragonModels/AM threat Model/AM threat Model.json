@@ -107,16 +107,24 @@
               "angle": 0,
               "id": "92eb826d-2e0a-4a53-8512-15aed9a72b3b",
               "z": 3,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "title": "generic tampering"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Field Officer"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -890,8 +898,8 @@
               "labels": [
                 {
                   "position": {
-                    "distance": 0.5208208744094321,
-                    "offset": 22.405497671799864
+                    "distance": 0.5498735738839201,
+                    "offset": 0.9646707714651673
                   },
                   "attrs": {
                     "text": {
@@ -1138,8 +1146,8 @@
               "labels": [
                 {
                   "position": {
-                    "distance": 0.48093215862129857,
-                    "offset": -16.601435184624833
+                    "distance": 0.46564440448305644,
+                    "offset": 1.0200303077045132
                   },
                   "attrs": {
                     "text": {
@@ -1294,18 +1302,26 @@
               "angle": 0,
               "id": "a4aff516-524f-48f3-9bcd-24da8b6e8b8f",
               "z": 37,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "storesCredentials": true,
               "isEncrypted": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "title": "Unstructured use of data"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Tablet"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             }
