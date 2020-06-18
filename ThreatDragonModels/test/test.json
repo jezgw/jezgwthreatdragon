@@ -980,7 +980,10 @@
               "id": "9908bd64-a87f-41bd-b739-abfcde011500",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.5835406630093256,
+                    "offset": -15.99852553966364
+                  },
                   "attrs": {
                     "text": {
                       "text": "Device manage",
@@ -1002,6 +1005,64 @@
                   "class": "connection hasNoOpenThreats isInScope"
                 }
               }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 266,
+                "y": 334
+              },
+              "target": {
+                "x": 42,
+                "y": 395
+              },
+              "vertices": [
+                {
+                  "x": 81,
+                  "y": 419
+                }
+              ],
+              "id": "dd7df58f-5cfa-491f-98d9-23759c4d7e01",
+              "z": 34,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 503,
+                "y": 68
+              },
+              "target": {
+                "x": 454,
+                "y": 272
+              },
+              "vertices": [],
+              "id": "8988dbbc-bfa1-4f5b-bce6-c2598a4cbed6",
+              "z": 35,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 1122,
+                "y": 85
+              },
+              "target": {
+                "x": 859,
+                "y": 223
+              },
+              "vertices": [
+                {
+                  "x": 1017,
+                  "y": 178
+                }
+              ],
+              "id": "531f3d25-67a0-4068-b599-3e8ed6fbef0b",
+              "z": 36,
+              "attrs": {}
             }
           ]
         },
