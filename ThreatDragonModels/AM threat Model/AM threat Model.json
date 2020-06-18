@@ -1272,6 +1272,12 @@
                   "severity": "Medium",
                   "type": "Tampering",
                   "title": "Alter device settings"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "title": "Generic DoS"
                 }
               ],
               "attrs": {
