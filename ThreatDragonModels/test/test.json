@@ -220,19 +220,19 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "id": "d9aecdc4-d070-4394-af1f-3e9ce352cd7d"
+                "x": 365,
+                "y": 83
               },
               "target": {
-                "x": 517,
-                "y": 110
+                "id": "0dd295cb-5691-4dea-bb77-2a9390012d36"
               },
               "vertices": [],
               "id": "31b5cc61-84af-4b1b-bfb3-e12786ebedb9",
               "labels": [
                 {
                   "position": {
-                    "distance": 0.5712534503938312,
-                    "offset": 14.72000039710008
+                    "distance": 0.5122545702428449,
+                    "offset": 23.04042288973322
                   },
                   "attrs": {
                     "text": {
@@ -436,8 +436,8 @@
                 "height": 100
               },
               "position": {
-                "x": 235,
-                "y": 386
+                "x": 248,
+                "y": 392
               },
               "angle": 0,
               "id": "1b74289c-fb45-482e-8cae-6499eb256d34",
@@ -462,8 +462,8 @@
                 "height": 100
               },
               "position": {
-                "x": 364,
-                "y": 162
+                "x": 366,
+                "y": 184
               },
               "angle": 0,
               "id": "eaf56f4a-1da9-4904-8a79-147e406e0726",
@@ -488,8 +488,8 @@
                 "height": 100
               },
               "position": {
-                "x": 779,
-                "y": 375
+                "x": 755,
+                "y": 368
               },
               "angle": 0,
               "id": "56918725-1d51-4a93-ae07-f3e8511bb77e",
@@ -594,8 +594,8 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 941,
-                "y": 295
+                "x": 940,
+                "y": 283
               },
               "target": {
                 "x": 787,
@@ -614,7 +614,10 @@
               "id": "ae21c874-0d86-48fc-8a69-3553dd037e2e",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.5246079353295381,
+                    "offset": -12.649134684530665
+                  },
                   "attrs": {
                     "text": {
                       "text": "Create New subject",
@@ -660,7 +663,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "Case Management\nRecords",
+                      "text": "Case\nrecords/de-identify",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -717,7 +720,7 @@
                   },
                   "attrs": {
                     "text": {
-                      "text": "flow 19",
+                      "text": "Comms with subject",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -726,6 +729,7 @@
               ],
               "z": 23,
               "hasOpenThreats": false,
+              "protocol": "SMS",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -742,8 +746,8 @@
                 "height": 100
               },
               "position": {
-                "x": 560,
-                "y": 180
+                "x": 607,
+                "y": 179
               },
               "angle": 0,
               "id": "61a123f9-4d37-4677-9f5e-3b44d7c1cd55",
@@ -768,34 +772,8 @@
                 "height": 100
               },
               "position": {
-                "x": 818,
-                "y": 175
-              },
-              "angle": 0,
-              "id": "0b3cd82d-937f-404c-aee1-c72c81f9a2e8",
-              "z": 25,
-              "hasOpenThreats": false,
-              "attrs": {
-                ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
-                },
-                "text": {
-                  "text": "process 21"
-                },
-                ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
-                }
-              }
-            },
-            {
-              "type": "tm.Process",
-              "size": {
-                "width": 100,
-                "height": 100
-              },
-              "position": {
-                "x": 951,
-                "y": 93
+                "x": 886,
+                "y": 99
               },
               "angle": 0,
               "id": "c3a93441-d437-4be4-a691-1ed2f5d94390",
@@ -997,6 +975,44 @@
                 },
                 ".element-text": {
                   "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "x": 517,
+                "y": 149
+              },
+              "target": {
+                "x": 373,
+                "y": 143
+              },
+              "vertices": [],
+              "id": "9908bd64-a87f-41bd-b739-abfcde011500",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Device manage",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 33,
+              "hasOpenThreats": false,
+              "protocol": "https mobile",
+              "isEncrypted": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
                 }
               }
             }
