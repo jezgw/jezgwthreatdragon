@@ -105,8 +105,8 @@
                 "height": 80
               },
               "position": {
-                "x": 492,
-                "y": 389
+                "x": 493,
+                "y": 401
               },
               "angle": 0,
               "id": "92eb826d-2e0a-4a53-8512-15aed9a72b3b",
@@ -137,16 +137,30 @@
               "angle": 0,
               "id": "d9aecdc4-d070-4394-af1f-3e9ce352cd7d",
               "z": 4,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Tampering",
+                  "title": "Tampering"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "title": "DoS"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Base Station"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -209,20 +223,20 @@
                 "id": "d9aecdc4-d070-4394-af1f-3e9ce352cd7d"
               },
               "target": {
-                "x": 518,
-                "y": 122
+                "x": 517,
+                "y": 110
               },
               "vertices": [],
               "id": "31b5cc61-84af-4b1b-bfb3-e12786ebedb9",
               "labels": [
                 {
                   "position": {
-                    "distance": 0.311481179896675,
-                    "offset": 21.843060031520814
+                    "distance": 0.5712534503938312,
+                    "offset": 14.72000039710008
                   },
                   "attrs": {
                     "text": {
-                      "text": "flow 7",
+                      "text": "Cellular network",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -231,6 +245,8 @@
               ],
               "z": 8,
               "hasOpenThreats": false,
+              "protocol": "Https mobile",
+              "isEncrypted": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -254,6 +270,8 @@
               "id": "0dd295cb-5691-4dea-bb77-2a9390012d36",
               "z": 9,
               "hasOpenThreats": false,
+              "isALog": true,
+              "isEncrypted": true,
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -280,6 +298,9 @@
               "id": "f404ce03-8034-4fb2-9bd1-974ca671edf2",
               "z": 11,
               "hasOpenThreats": false,
+              "isALog": true,
+              "storesCredentials": true,
+              "isEncrypted": true,
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -306,6 +327,9 @@
               "id": "115d64ec-7b4c-4061-9398-f1e8b2d0f3b9",
               "z": 12,
               "hasOpenThreats": false,
+              "isALog": true,
+              "storesCredentials": true,
+              "isEncrypted": true,
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasNoOpenThreats isInScope"
@@ -322,8 +346,8 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 489,
-                "y": 431
+                "x": 491,
+                "y": 495
               },
               "target": {
                 "id": "55ec0b21-9174-4fd9-8782-a0e60317dc5d"
@@ -343,7 +367,7 @@
                   },
                   "attrs": {
                     "text": {
-                      "text": "flow 11",
+                      "text": "Use subject data",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -352,6 +376,8 @@
               ],
               "z": 14,
               "hasOpenThreats": false,
+              "isEncrypted": true,
+              "protocol": "SHA - Encrypted tablet",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -368,7 +394,8 @@
                 "id": "115d64ec-7b4c-4061-9398-f1e8b2d0f3b9"
               },
               "target": {
-                "id": "92eb826d-2e0a-4a53-8512-15aed9a72b3b"
+                "x": 654,
+                "y": 486
               },
               "vertices": [
                 {
@@ -382,7 +409,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 12",
+                      "text": "Send data to Field Off",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -391,6 +418,8 @@
               ],
               "z": 15,
               "hasOpenThreats": false,
+              "protocol": "VPN",
+              "isEncrypted": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -495,7 +524,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 16",
+                      "text": "Access portal",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -504,6 +533,9 @@
               ],
               "z": 19,
               "hasOpenThreats": false,
+              "protocol": "Https",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -531,10 +563,13 @@
               "id": "a3cfdbfb-bc32-4589-83b5-80d98fceae12",
               "labels": [
                 {
-                  "position": 0.5,
+                  "position": {
+                    "distance": 0.8797064579957491,
+                    "offset": 37.77575973124259
+                  },
                   "attrs": {
                     "text": {
-                      "text": "flow 17",
+                      "text": "Comms with EMS",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -543,6 +578,9 @@
               ],
               "z": 20,
               "hasOpenThreats": false,
+              "protocol": "CJSM and telephone",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -579,7 +617,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 18",
+                      "text": "Create New subject",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -588,6 +626,8 @@
               ],
               "z": 21,
               "hasOpenThreats": false,
+              "isEncrypted": true,
+              "protocol": "Https",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -620,7 +660,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 18",
+                      "text": "Case Management\nRecords",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -629,6 +669,8 @@
               ],
               "z": 22,
               "hasOpenThreats": false,
+              "protocol": "TLS/DB",
+              "isEncrypted": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -752,7 +794,7 @@
                 "height": 100
               },
               "position": {
-                "x": 969,
+                "x": 951,
                 "y": 93
               },
               "angle": 0,
@@ -796,7 +838,7 @@
                   },
                   "attrs": {
                     "text": {
-                      "text": "flow 24",
+                      "text": "Email",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -805,6 +847,9 @@
               ],
               "z": 28,
               "hasOpenThreats": false,
+              "protocol": "TLS",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -835,7 +880,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 24",
+                      "text": "Physical data",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -844,12 +889,13 @@
               ],
               "z": 29,
               "hasOpenThreats": false,
+              "outOfScope": true,
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isOutOfScope"
                 }
               }
             },
@@ -871,7 +917,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 25",
+                      "text": "Transmit data",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -880,6 +926,8 @@
               ],
               "z": 30,
               "hasOpenThreats": false,
+              "isEncrypted": true,
+              "protocol": "Cellular",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
@@ -907,7 +955,7 @@
                   "position": 0.5,
                   "attrs": {
                     "text": {
-                      "text": "flow 26",
+                      "text": "Comms with subject",
                       "font-weight": "400",
                       "font-size": "small"
                     }
@@ -916,12 +964,39 @@
               ],
               "z": 31,
               "hasOpenThreats": false,
+              "protocol": "SMP, Telephone",
               "attrs": {
                 ".marker-target": {
                   "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
                   "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 493,
+                "y": 464
+              },
+              "angle": 0,
+              "id": "f733751a-d7f8-4be9-a906-b903e4d61f73",
+              "z": 32,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Tablet"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             }
