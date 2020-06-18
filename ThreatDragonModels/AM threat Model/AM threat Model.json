@@ -101,8 +101,8 @@
                 "height": 80
               },
               "position": {
-                "x": 493,
-                "y": 401
+                "x": 491,
+                "y": 385
               },
               "angle": 0,
               "id": "92eb826d-2e0a-4a53-8512-15aed9a72b3b",
@@ -175,8 +175,8 @@
                 "height": 80
               },
               "position": {
-                "x": 949,
-                "y": 12
+                "x": 947,
+                "y": 8
               },
               "angle": 0,
               "id": "1753ea07-6aac-46b6-8ddb-f1cdaa7198ab",
@@ -210,8 +210,8 @@
                 "height": 80
               },
               "position": {
-                "x": 942,
-                "y": 213
+                "x": 947,
+                "y": 256
               },
               "angle": 0,
               "id": "10dfdfae-ed52-4016-aeb5-5d72f12aab8f",
@@ -442,8 +442,8 @@
                 "height": 80
               },
               "position": {
-                "x": 941,
-                "y": 394
+                "x": 943,
+                "y": 437
               },
               "angle": 0,
               "id": "115d64ec-7b4c-4061-9398-f1e8b2d0f3b9",
@@ -608,23 +608,31 @@
                 "height": 100
               },
               "position": {
-                "x": 248,
-                "y": 393
+                "x": 247,
+                "y": 369
               },
               "angle": 0,
               "id": "1b74289c-fb45-482e-8cae-6499eb256d34",
               "z": 16,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "privilegeLevel": "Elevated",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "No Integrated SIEM",
+                  "type": "Repudiation"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Fit tag"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -641,17 +649,25 @@
               "angle": 0,
               "id": "56918725-1d51-4a93-ae07-f3e8511bb77e",
               "z": 18,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "privilegeLevel": "Limited",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "No Integrated SIEM",
+                  "type": "Repudiation"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Send/receive\nsubject data"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -659,8 +675,8 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 941,
-                "y": 45
+                "x": 944,
+                "y": 55
               },
               "target": {
                 "id": "f404ce03-8034-4fb2-9bd1-974ca671edf2"
@@ -721,8 +737,8 @@
               "labels": [
                 {
                   "position": {
-                    "distance": 0.8797064579957491,
-                    "offset": 37.77575973124259
+                    "distance": 0.8332392557579188,
+                    "offset": 31.585199152337733
                   },
                   "attrs": {
                     "text": {
@@ -761,8 +777,7 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 940,
-                "y": 283
+                "id": "10dfdfae-ed52-4016-aeb5-5d72f12aab8f"
               },
               "target": {
                 "x": 787,
@@ -795,15 +810,29 @@
                 }
               ],
               "z": 21,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isEncrypted": true,
               "protocol": "Https",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "title": "Ineffective anonymisation"
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "title": "generic DoS"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -811,19 +840,14 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 1041,
-                "y": 294
+                "x": 1039,
+                "y": 337
               },
               "target": {
-                "x": 1040,
-                "y": 393
+                "x": 1039,
+                "y": 436
               },
-              "vertices": [
-                {
-                  "x": 1037,
-                  "y": 304
-                }
-              ],
+              "vertices": [],
               "id": "d5ab41d9-4407-4f0b-916f-2c79f640bd5e",
               "labels": [
                 {
@@ -878,8 +902,8 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 1012,
-                "y": 295
+                "x": 946,
+                "y": 311
               },
               "target": {
                 "id": "500f452e-edb0-4de5-8f35-4d45dc996846"
@@ -890,12 +914,8 @@
                   "y": 343
                 },
                 {
-                  "x": 569,
-                  "y": 344
-                },
-                {
-                  "x": 393,
-                  "y": 344
+                  "x": 397,
+                  "y": 320
                 },
                 {
                   "x": 226,
@@ -961,17 +981,25 @@
               "angle": 0,
               "id": "61a123f9-4d37-4677-9f5e-3b44d7c1cd55",
               "z": 24,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "privilegeLevel": "Elevated",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "No Integrated SIEM",
+                  "type": "Repudiation"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Update AMS\nportal"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -988,17 +1016,25 @@
               "angle": 0,
               "id": "c3a93441-d437-4be4-a691-1ed2f5d94390",
               "z": 26,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "privilegeLevel": "Elevated",
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "title": "No Integrated SIEM"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Administer\nsubject"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1009,8 +1045,8 @@
                 "id": "f404ce03-8034-4fb2-9bd1-974ca671edf2"
               },
               "target": {
-                "x": 940,
-                "y": 23
+                "x": 947,
+                "y": 36
               },
               "vertices": [
                 {
@@ -1026,8 +1062,8 @@
               "labels": [
                 {
                   "position": {
-                    "distance": 0.5154293640823137,
-                    "offset": -16.737000155224823
+                    "distance": 0.5101007574563697,
+                    "offset": -5.111460923158699
                   },
                   "attrs": {
                     "text": {
@@ -1137,8 +1173,8 @@
               "type": "tm.Flow",
               "smooth": true,
               "source": {
-                "x": 938,
-                "y": 11
+                "x": 947,
+                "y": 9
               },
               "target": {
                 "x": 184,
@@ -1226,16 +1262,24 @@
                 }
               ],
               "z": 33,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "protocol": "https mobile",
               "isEncrypted": true,
               "isPublicNetwork": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "title": "Alter device settings"
+                }
+              ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasNoOpenThreats isInScope"
+                  "class": "marker-target hasOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasNoOpenThreats isInScope"
+                  "class": "connection hasOpenThreats isInScope"
                 }
               }
             },
@@ -1289,8 +1333,8 @@
               },
               "vertices": [
                 {
-                  "x": 1017,
-                  "y": 178
+                  "x": 1014,
+                  "y": 200
                 }
               ],
               "id": "531f3d25-67a0-4068-b599-3e8ed6fbef0b",
@@ -1304,8 +1348,8 @@
                 "height": 80
               },
               "position": {
-                "x": 493,
-                "y": 487
+                "x": 491,
+                "y": 479
               },
               "angle": 0,
               "id": "a4aff516-524f-48f3-9bcd-24da8b6e8b8f",
