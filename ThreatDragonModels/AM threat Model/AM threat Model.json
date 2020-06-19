@@ -111,9 +111,11 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
-                  "type": "Tampering",
-                  "title": "generic tampering"
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "title": "Lost/Stolen Tablet",
+                  "description": "Data loss from comprimised device",
+                  "mitigation": "encryption, mdm"
                 }
               ],
               "attrs": {
@@ -185,10 +187,19 @@
               "threats": [
                 {
                   "status": "Open",
+                  "severity": "Low",
+                  "title": "Confidentiality breach",
+                  "description": "data handling and Syops",
+                  "type": "Information disclosure",
+                  "mitigation": "Security Awareness"
+                },
+                {
+                  "status": "Open",
                   "severity": "Medium",
-                  "title": "Confidentiality",
-                  "description": "lost documentation",
-                  "type": "Information disclosure"
+                  "type": "Elevation of privilege",
+                  "title": "Incorrect permissions",
+                  "description": "Once a user is identified on a system, they usually have some sort of privileges, i.e., they are authorised to perform some actions, but not necessarily all of them. An attacker might therefore try to acquire additional privileges, for instance by spoofing a user with higher privileges, or by tampering the system to change their own privileges.",
+                  "mitigation": "Pen test web app"
                 }
               ],
               "attrs": {
@@ -223,38 +234,24 @@
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "title": "Portal navigation",
-                  "description": "probation users could inadvertently expose weaknesses in the web portal that lead to information disclosure",
-                  "mitigation": "Application security testing and remediation beofre go live"
-                },
-                {
-                  "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
-                  "title": "Generic spoofing threat",
-                  "type": "Spoofing",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "Many of the protocols in the TCP/IP suite do not provide mechanisms for authenticating the source or destination of a message, and are thus vulnerable to spoofing attacks",
-                  "mitigation": "Requires pen testing"
-                },
-                {
-                  "ruleId": "87bc37e2-798e-4d68-bb96-feb1da26da48",
-                  "title": "Generic repudiation threat",
-                  "type": "Repudiation",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A repudiation attack happens when an application or system does not adopt controls to properly track and log users' actions, thus permitting malicious manipulation or forging the identification of new actions.",
-                  "mitigation": "Integrated SIEM"
+                  "description": "Users could inadvertently expose weaknesses in the web portal that lead to information disclosure",
+                  "mitigation": "Application security testing and remediation before go live"
                 },
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "type": "Tampering",
-                  "title": "Insider"
+                  "title": "Insider",
+                  "description": "Only authorised users should be able to modify a system or the data it uses. If an attacker is able to tamper with it, it can have some consequences on the usage of the system itself, for instance if the attacker can add or remove some functional elements, or on the purpose of the system, for instance if important data is destroyed or modified",
+                  "mitigation": "User Management"
                 },
                 {
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Elevation of privilege",
-                  "title": "Insider"
+                  "title": "Insider",
+                  "description": "Once a user is identified on a system, they usually have some sort of privileges, i.e., they are authorised to perform some actions, but not necessarily all of them. An attacker might therefore try to acquire additional privileges, for instance by spoofing a user with higher privileges, or by tampering the system to change their own privileges.",
+                  "mitigation": "Pen test portal application"
                 }
               ],
               "attrs": {
@@ -462,28 +459,13 @@
               "isEncrypted": true,
               "threats": [
                 {
-                  "ruleId": "4adaa48a-0345-4533-a189-64c98c4420dd",
-                  "title": "Generic tampering threat",
-                  "type": "Tampering",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic tampering threat"
-                },
-                {
-                  "ruleId": "87bc37e2-798e-4d68-bb96-feb1da26da48",
-                  "title": "Insider",
-                  "type": "Elevation of privilege",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "unapproved"
-                },
-                {
                   "ruleId": "13000296-b17d-4b72-9cc4-f5cc33f80e4c",
                   "title": "Generic informtion disclosure threat",
                   "type": "Information disclosure",
                   "status": "Open",
                   "severity": "Medium",
-                  "description": "A generic information disclosure threat"
+                  "description": "Non Use TLS to access unencrypted database",
+                  "mitigation": "Encryption"
                 },
                 {
                   "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
@@ -629,7 +611,9 @@
                   "status": "Open",
                   "severity": "Medium",
                   "title": "No Integrated SIEM",
-                  "type": "Repudiation"
+                  "type": "Repudiation",
+                  "description": "A repudiation attack happens when an application or system does not adopt controls to properly track and log users' actions, thus permitting malicious manipulation or forging the identification of new actions.",
+                  "mitigation": "SIEM"
                 }
               ],
               "attrs": {
@@ -664,7 +648,9 @@
                   "status": "Open",
                   "severity": "Medium",
                   "title": "No Integrated SIEM",
-                  "type": "Repudiation"
+                  "type": "Repudiation",
+                  "description": "A repudiation attack happens when an application or system does not adopt controls to properly track and log users' actions, thus permitting malicious manipulation or forging the identification of new actions.",
+                  "mitigation": "SIEM"
                 }
               ],
               "attrs": {
@@ -768,8 +754,9 @@
                   "title": "Generic DoS threat",
                   "type": "Denial of service",
                   "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic DoS threat"
+                  "severity": "Low",
+                  "description": "An attacker could generate a malicious message that Capita cannot process.",
+                  "mitigation": "Validate the content of all messages, before processing. Reject any message that have invalid content and log the rejection. Do not log the malicious content - instead log a description of the error."
                 }
               ],
               "attrs": {
@@ -1031,7 +1018,9 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Repudiation",
-                  "title": "No Integrated SIEM"
+                  "title": "No Integrated SIEM",
+                  "description": "A repudiation attack happens when an application or system does not adopt controls to properly track and log users' actions, thus permitting malicious manipulation or forging the identification of new actions.",
+                  "mitigation": "Central SIEM"
                 }
               ],
               "attrs": {
@@ -1374,9 +1363,11 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "type": "Information disclosure",
-                  "title": "Unstructured use of data"
+                  "title": "Unstructured use of data",
+                  "description": "Use of source data in unstructred ways i.e searching for subject addresses on google maps etc",
+                  "mitigation": "Device configuration, web filtering, SyOps"
                 }
               ],
               "attrs": {
