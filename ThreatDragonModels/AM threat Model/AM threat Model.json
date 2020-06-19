@@ -30,7 +30,7 @@
               "threats": [
                 {
                   "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
-                  "title": "spoofing threat",
+                  "title": "Id spoof",
                   "type": "Spoofing",
                   "status": "Open",
                   "severity": "Medium",
@@ -70,8 +70,9 @@
                   "title": "Tamper",
                   "type": "Tampering",
                   "status": "Open",
-                  "severity": "Medium",
-                  "description": "tamper with the tag"
+                  "severity": "Low",
+                  "description": "tamper with the tag",
+                  "mitigation": "monitoring"
                 },
                 {
                   "ruleId": "87bc37e2-798e-4d68-bb96-feb1da26da48",
@@ -79,9 +80,11 @@
                   "type": "Denial of service",
                   "status": "Open",
                   "severity": "Low",
-                  "description": "tag stops working"
+                  "description": "tag stops working",
+                  "mitigation": "monitoring"
                 }
               ],
+              "outOfScope": false,
               "attrs": {
                 ".element-shape": {
                   "class": "element-shape hasOpenThreats isInScope"
@@ -149,13 +152,17 @@
                   "status": "Open",
                   "severity": "Low",
                   "type": "Tampering",
-                  "title": "Tampering"
+                  "title": "Tampering",
+                  "mitigation": "alarm",
+                  "description": "device interference"
                 },
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "type": "Denial of service",
-                  "title": "DoS"
+                  "title": "DoS",
+                  "description": "Device stops working",
+                  "mitigation": "Alarm"
                 }
               ],
               "attrs": {
@@ -401,23 +408,17 @@
                   "type": "Elevation of privilege",
                   "status": "Open",
                   "severity": "Medium",
-                  "description": "pass the hash"
-                },
-                {
-                  "ruleId": "87bc37e2-798e-4d68-bb96-feb1da26da48",
-                  "title": "Generic repudiation threat",
-                  "type": "Repudiation",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic repudiation threat"
+                  "description": "pass the hash",
+                  "mitigation": "Azure configuration and testing"
                 },
                 {
                   "ruleId": "13000296-b17d-4b72-9cc4-f5cc33f80e4c",
-                  "title": "Generic informtion disclosure threat",
+                  "title": "Informtion disclosure from app",
                   "type": "Information disclosure",
                   "status": "Open",
                   "severity": "Medium",
-                  "description": "A generic information disclosure threat"
+                  "description": "Bespoke application development leading to configuration wekness and information disclosure",
+                  "mitigation": "Appication testing"
                 },
                 {
                   "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
@@ -983,7 +984,9 @@
                   "status": "Open",
                   "severity": "Medium",
                   "title": "No Integrated SIEM",
-                  "type": "Repudiation"
+                  "type": "Repudiation",
+                  "description": "A repudiation attack happens when an application or system does not adopt controls to properly track and log users' actions, thus permitting malicious manipulation or forging the identification of new actions.",
+                  "mitigation": "SIEM"
                 }
               ],
               "attrs": {
@@ -1268,13 +1271,17 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "title": "Alter device settings"
+                  "title": "Alter device settings",
+                  "description": "Tampering from Azure",
+                  "mitigation": "ACL RBAC"
                 },
                 {
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "title": "Generic DoS"
+                  "title": "Generic DoS",
+                  "description": "network down",
+                  "mitigation": "Failover"
                 }
               ],
               "attrs": {
