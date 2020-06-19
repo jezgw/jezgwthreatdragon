@@ -26,13 +26,13 @@
               "angle": 0,
               "id": "500f452e-edb0-4de5-8f35-4d45dc996846",
               "z": 1,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
                   "title": "Id spoof",
                   "type": "Spoofing",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "description": "Is it the real subject?",
                   "mitigation": "Id check"
@@ -40,13 +40,13 @@
               ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Subject"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -63,22 +63,22 @@
               "angle": 0,
               "id": "55ec0b21-9174-4fd9-8782-a0e60317dc5d",
               "z": 2,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "ruleId": "b2a6d40d-d3f8-4750-8e4d-c02cc84b13dc",
                   "title": "Tamper",
                   "type": "Tampering",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Low",
                   "description": "tamper with the tag",
                   "mitigation": "monitoring"
                 },
                 {
                   "ruleId": "87bc37e2-798e-4d68-bb96-feb1da26da48",
-                  "title": "Denail of service",
+                  "title": "Denial of service",
                   "type": "Denial of service",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Low",
                   "description": "tag stops working",
                   "mitigation": "monitoring"
@@ -87,13 +87,13 @@
               "outOfScope": false,
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Tag"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -146,10 +146,10 @@
               "angle": 0,
               "id": "d9aecdc4-d070-4394-af1f-3e9ce352cd7d",
               "z": 4,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Low",
                   "type": "Tampering",
                   "title": "Tampering",
@@ -157,7 +157,7 @@
                   "description": "device interference"
                 },
                 {
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Low",
                   "type": "Denial of service",
                   "title": "DoS",
@@ -167,13 +167,13 @@
               ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasOpenThreats isInScope"
+                  "class": "element-shape hasNoOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Base Station"
                 },
                 ".element-text": {
-                  "class": "element-text hasOpenThreats isInScope"
+                  "class": "element-text hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -301,24 +301,26 @@
                 }
               ],
               "z": 8,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "protocol": "Https mobile",
               "isEncrypted": true,
               "isPublicNetwork": true,
               "threats": [
                 {
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "title": "Generic DoS"
+                  "title": "Generic DoS",
+                  "description": "PSN down",
+                  "mitigation": "Failover"
                 }
               ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasOpenThreats isInScope"
+                  "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -475,6 +477,14 @@
                   "status": "Open",
                   "severity": "Medium",
                   "description": "A generic DoS threat"
+                },
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Cloud security weakness",
+                  "type": "Elevation of privilege",
+                  "mitigation": "configuration and test",
+                  "description": "Needs further detail"
                 }
               ],
               "attrs": {
@@ -522,23 +532,25 @@
                 }
               ],
               "z": 14,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isEncrypted": true,
               "protocol": "SHA - Encrypted tablet",
               "threats": [
                 {
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "title": "Use data incorrectly",
-                  "type": "Information disclosure"
+                  "type": "Information disclosure",
+                  "description": "mailcious or error",
+                  "mitigation": "Secure employment practise"
                 }
               ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasOpenThreats isInScope"
+                  "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -578,9 +590,11 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "type": "Denial of service",
-                  "title": "VPN - down"
+                  "title": "VPN - down",
+                  "mitigation": "access capita portal",
+                  "description": "VPN breaks"
                 }
               ],
               "attrs": {
@@ -691,25 +705,26 @@
                 }
               ],
               "z": 19,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "protocol": "Https",
               "isEncrypted": true,
               "isPublicNetwork": true,
               "threats": [
                 {
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "caseworkers",
-                  "title": "caseworkers"
+                  "title": "caseworkers",
+                  "mitigation": "encryped connect"
                 }
               ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasOpenThreats isInScope"
+                  "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -745,27 +760,27 @@
                 }
               ],
               "z": 20,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "protocol": "CJSM and telephone",
               "isEncrypted": true,
               "isPublicNetwork": true,
               "threats": [
                 {
                   "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
-                  "title": "Generic DoS threat",
+                  "title": "DoS via message corruption",
                   "type": "Denial of service",
-                  "status": "Open",
-                  "severity": "Low",
+                  "status": "Mitigated",
+                  "severity": "Medium",
                   "description": "An attacker could generate a malicious message that Capita cannot process.",
                   "mitigation": "Validate the content of all messages, before processing. Reject any message that have invalid content and log the rejection. Do not log the malicious content - instead log a description of the error."
                 }
               ],
               "attrs": {
                 ".marker-target": {
-                  "class": "marker-target hasOpenThreats isInScope"
+                  "class": "marker-target hasNoOpenThreats isInScope"
                 },
                 ".connection": {
-                  "class": "connection hasOpenThreats isInScope"
+                  "class": "connection hasNoOpenThreats isInScope"
                 }
               }
             },
@@ -864,9 +879,11 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "type": "Tampering",
-                  "title": "Error - de-identification"
+                  "title": "Error - de-identification",
+                  "description": "malicious error in Deidentification",
+                  "mitigation": "protective monitoring"
                 },
                 {
                   "ruleId": "13000296-b17d-4b72-9cc4-f5cc33f80e4c",
@@ -874,14 +891,15 @@
                   "type": "Elevation of privilege",
                   "status": "Open",
                   "severity": "Medium",
-                  "description": "A generic information disclosure threat"
+                  "description": "A generic information disclosure threat",
+                  "mitigation": "protective monitoring"
                 },
                 {
                   "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
                   "title": "Generic DoS threat",
                   "type": "Denial of service",
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "description": "A generic DoS threat"
                 }
               ],
@@ -1209,18 +1227,19 @@
               "threats": [
                 {
                   "ruleId": "13000296-b17d-4b72-9cc4-f5cc33f80e4c",
-                  "title": "Generic informtion disclosure threat",
+                  "title": "informtion disclosure by interception",
                   "type": "Information disclosure",
                   "status": "Open",
-                  "severity": "Medium",
-                  "description": "A generic information disclosure threat"
+                  "severity": "Low",
+                  "description": "A generic information disclosure threat",
+                  "mitigation": "encryption"
                 },
                 {
                   "ruleId": "edb05d76-a695-455f-947b-7d67b78bc31d",
                   "title": "Generic DoS threat",
                   "type": "Denial of service",
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "Low",
                   "description": "A generic DoS threat"
                 }
               ],
@@ -1276,7 +1295,7 @@
                   "mitigation": "ACL RBAC"
                 },
                 {
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Denial of service",
                   "title": "Generic DoS",
